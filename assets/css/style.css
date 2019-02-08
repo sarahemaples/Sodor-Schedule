@@ -1,0 +1,40 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 200;
+    background: url("../img/train-track-background.jpg");
+    background-repeat: repeat;
+    margin: 0 auto;
+}
+
+#jumbo {
+    background: url("../img/tnf_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sodor-schedule {
+    margin-bottom: 0;
+    font-family: 'Alegreya SC', serif;
+    color: red;
+    font-size: 300%;
+}
+
+.card {
+    background-color: rgb(80, 162, 230);
+    color: aliceblue;
+    border: solid rgb(131, 172, 247) 3px;
+}
+
+.card-header {
+    background-color: rgb(31, 45, 119);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.table-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: yellow;
+}

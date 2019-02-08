@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sodor Train Schedule</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:900" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -24,11 +32,14 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <div class="jumbotron">
-                      <h1 class="display-4"></i>Sodor Schedule</h1>
+                <div class="jumbotron" id="jumbo">
+                    <h1 class="sodor-schedule">Sodor</h1>
+                    <h1 class="sodor-schedule">Schedule</h1>
                 </div>
             </div>
         </div>
+        <!-- adding my audio link...not sure where this should go teehee -->
+        <!-- <audio id="theme" controls><source src="assets/Thomas and Friends.mp3" type="audio/mp3"></audio> -->
         <div class="row mt-3">
             <div class="col">
                 <div class="card">
@@ -37,11 +48,11 @@
                         <table class="table">
                             <thead>
                               <tr>
-                                <th scope="col">Train Name</th>
-                                <th scope="col">Destination</th>
-                                <th scope="col">Frequency (min)</th>
-                                <th scope="col">Next Arrival</th>
-                                <th scope="col">Minutes Away</th>
+                                <th scope="col" class="table-title">Train Name</th>
+                                <th scope="col" class="table-title">Destination</th>
+                                <th scope="col" class="table-title">Frequency (min)</th>
+                                <th scope="col" class="table-title">Next Arrival</th>
+                                <th scope="col" class="table-title">Minutes Away</th>
                               </tr>
                             </thead>
                             <tbody id="train-table">
@@ -74,7 +85,7 @@
                                 <label for="frequency">Frequency (min)</label>
                                 <input type="text" class="form-control" id="frequency">
                             </div>
-                            <button type="button" class="btn btn-primary" id="add">Add</button>
+                            <button type="button" class="btn btn-primary" id="add" style="float: right">Add</button>
                         </form>
                     </div>
                 </div>

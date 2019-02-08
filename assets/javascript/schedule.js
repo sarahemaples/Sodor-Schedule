@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    // play theme song when page loads
+    // $("#theme").play();
 
     // Initialize Firebase
     var config = {
@@ -66,7 +68,7 @@ $(document).ready(function(){
         // console.log(sv.nextArrival);
 
         // change the html to reflect
-        var data = "<tr><th scope='row'>"+sv.name+"</th><td>"+sv.dest+"</td><td>"+sv.freq+"</td><td>"+sv.nextArrival+"</td><td>"+minutesAway+"</td></tr>";
+        var data = "<tr><th scope='row'>"+sv.name+"</th><td>"+sv.dest+"</td><td>"+sv.freq+"</td><td>"+sv.nextArrival+"</td><td>"+sv.minutesAway+"</td></tr>";
 
         // adding data to our table
         $("#train-table").append(data);
